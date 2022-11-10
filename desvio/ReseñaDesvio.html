@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+    <main class="desmain">   
+        <div class="registro-wrapper">
+            <div class="registro-form">
+                <h3>
+                    Registro de Desvio
+                </h3>
+                <form action="desvio2.php" method="post">
+                    <p>
+                        <label for="fullname">Nombre Completo</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </p>
+                    <p>
+                        <label>Edad</label>
+                        <input type="number" name="edad" id="edad">
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input type="tel" name="phone" id="phone">
+                    </p>
+                    <p>
+                        <label>Lugar</label>
+                        <input type="text" name="lugar" id="lugar">
+                    </p>
+                    <p class="block">
+                        <label>Comentario</label>
+                        <textarea name="coment"rows="5" id="coment"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit" onclick="refrescarPagina();">
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="registro-info">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function refrescarPagina(){
+            location.reload();
+        }
+    </script>
+</body>
+</html>
